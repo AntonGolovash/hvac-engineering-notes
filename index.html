@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HVAC Engineering Notes</title>
+    <meta name="description" content="Independent engineering notes on heat pumps, ventilation, cooling and indoor air quality.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">HVAC Engineering Notes</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="heat-pumps.html">Heat Pumps</a>
+        <a href="ventilation-co2.html">Ventilation &amp; CO2</a>
+        <a href="cooling.html">Cooling</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Independent HVAC engineering</p>
+          <h1>HVAC Engineering Notes</h1>
+          <p class="hero-subtitle">Independent engineering notes on heat pumps, ventilation, cooling and indoor air quality.</p>
+          <p>
+            Practical explanations, real case-study structures and engineering logic for residential and small commercial
+            HVAC systems. The focus is on understanding how systems behave before equipment is selected or installed.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="case-studies.html">Read case studies</a>
+            <a class="button secondary" href="about.html">About the project</a>
+          </div>
+        </div>
+        <div class="system-panel" aria-label="Simplified HVAC system diagram">
+          <div class="system-node primary">Heat pump</div>
+          <div class="system-line"></div>
+          <div class="system-node">Buffer tank</div>
+          <div class="system-line"></div>
+          <div class="system-node">Controls</div>
+          <div class="system-grid">
+            <span>Room sensor</span>
+            <span>Ventilation</span>
+            <span>Hydronics</span>
+            <span>Commissioning</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Core topics</p>
+          <h2>Engineering notes by system type</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Heat Pumps</h3>
+            <p>Heating, cooling, hydraulics, buffer tanks, sensors and control logic for heat pump systems.</p>
+            <a class="text-link" href="heat-pumps.html">Explore heat pumps</a>
+          </article>
+          <article class="card">
+            <h3>Ventilation &amp; CO2</h3>
+            <p>Fresh air, air quality, heat recovery, duct design, noise and demand-based ventilation control.</p>
+            <a class="text-link" href="ventilation-co2.html">Explore ventilation</a>
+          </article>
+          <article class="card">
+            <h3>Cooling Systems</h3>
+            <p>Split systems, ducted cooling, VRF/VRV, fan coils and common control mistakes.</p>
+            <a class="text-link" href="cooling.html">Explore cooling</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Featured case study</p>
+          <h2>Why Water Temperature Alone Cannot Guarantee Indoor Comfort</h2>
+          <p>
+            A practical educational case study of heating and cooling control in a hydronic heat pump system, with focus
+            on room feedback, mode changeover and commissioning logic.
+          </p>
+        </div>
+        <article class="card featured-card">
+          <p class="label">Case study | Heat pumps | Controls</p>
+          <h3>Water temperature is only one part of comfort control</h3>
+          <p>
+            Learn why supply water temperature does not automatically describe room comfort, especially when heating and
+            cooling modes share the same distribution system.
+          </p>
+          <a class="button" href="cases/heat-pump-water-temperature-control.html">Open case study</a>
+        </article>
+      </section>
+
+      <section class="section highlight">
+        <div class="narrow">
+          <p class="eyebrow">Design philosophy</p>
+          <h2>Engineering before installation</h2>
+          <p>
+            A reliable HVAC system depends on correct design, hydraulics, control logic, sensors and commissioning, not
+            only on equipment selection. Good engineering connects the heat source, distribution system, ventilation,
+            indoor feedback and user expectations into one understandable operating strategy.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>HVAC Engineering Notes</p>
+      <p>Contact details will be added here.</p>
+    </footer>
+  </body>
+</html>
