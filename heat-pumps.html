@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heat Pumps | HVAC Engineering Notes</title>
+    <meta name="description" content="Engineering notes about heat pumps, hydraulics and control logic.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">HVAC Engineering Notes</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Toggle navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="heat-pumps.html" aria-current="page">Heat Pumps</a>
+        <a href="ventilation-co2.html">Ventilation &amp; CO2</a>
+        <a href="cooling.html">Cooling</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="page-header">
+        <p class="eyebrow">System design</p>
+        <h1>Heat pumps</h1>
+        <p>
+          Heat pump performance depends on the complete system: building load, water temperatures, emitters, hydraulic
+          separation, defrost behavior, controls and commissioning.
+        </p>
+      </section>
+
+      <section class="article-list">
+        <article>
+          <h2>Heating with heat pumps</h2>
+          <p>
+            In heating mode, a heat pump works best when the distribution system can deliver comfort with stable and
+            moderate water temperatures. Weather compensation, flow stability and room feedback should support each
+            other instead of fighting for control.
+          </p>
+        </article>
+        <article>
+          <h2>Cooling with heat pumps</h2>
+          <p>
+            Cooling with a heat pump requires attention to dew point risk, suitable emitters, condensate management and
+            clear changeover logic. A system designed only for heating may not automatically be suitable for cooling.
+          </p>
+        </article>
+        <article>
+          <h2>Hydraulics and buffer tanks</h2>
+          <p>
+            Buffer tanks can help with volume, flow separation and cycling control, but they also introduce temperature
+            mixing and sensor placement questions. Their role should be defined before pipework is built.
+          </p>
+        </article>
+        <article>
+          <h2>Control logic and sensors</h2>
+          <p>
+            Good control logic uses the right measurements for the right decision. Water temperature, room temperature,
+            outdoor temperature, flow status and operating mode all describe different parts of the system.
+          </p>
+        </article>
+        <article>
+          <h2>Common design mistakes</h2>
+          <p>
+            Typical problems include unclear mode changeover, poor sensor location, missing hydraulic intent, oversized
+            equipment, incompatible emitters and commissioning settings that are left at generic defaults.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>HVAC Engineering Notes</p>
+      <p>Contact details will be added here.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Water Temperature Alone Cannot Guarantee Indoor Comfort | HVAC Engineering Notes</title>
+    <meta name="description" content="Educational case study about hydronic heat pump control, room comfort and mode changeover.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">HVAC Engineering Notes</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Toggle navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../heat-pumps.html">Heat Pumps</a>
+        <a href="../ventilation-co2.html">Ventilation &amp; CO2</a>
+        <a href="../cooling.html">Cooling</a>
+        <a class="active" href="../case-studies.html" aria-current="page">Case Studies</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article-page">
+      <article class="article">
+        <header class="article-header">
+          <p class="label">Case study | Heat pumps | Controls</p>
+          <h1>Why Water Temperature Alone Cannot Guarantee Indoor Comfort</h1>
+          <p>A practical case study of heating and cooling control in a heat pump system.</p>
+          <p class="disclaimer">
+            This is a generalized educational case study based on typical hydronic heat pump control principles. It does
+            not claim knowledge of a specific installed model or exact site configuration.
+          </p>
+        </header>
+
+        <section>
+          <h2>1. Client Question</h2>
+          <p>
+            A common question is whether the heat pump can control comfort simply by maintaining the correct water
+            temperature. The short answer is that water temperature is important, but it is not the same as room comfort.
+          </p>
+        </section>
+
+        <figure class="diagram-placeholder">
+          <div>HP</div>
+          <div>Buffer</div>
+          <div>Zones</div>
+          <figcaption>Diagram placeholder: simplified hydronic heat pump system</figcaption>
+        </figure>
+
+        <section>
+          <h2>2. Initial System Configuration</h2>
+          <p>
+            The typical configuration includes a heat pump, a hydronic distribution circuit, one or more indoor emitters
+            and a control system that can switch between heating and cooling. A buffer tank, mixing point or hydraulic
+            separator may also be present.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. The Core Problem</h2>
+          <p>
+            The system may produce water at the requested temperature while rooms still feel too warm, too cold or slow
+            to respond. This happens because room comfort depends on building load, emitter output, airflow, solar gains,
+            occupancy, humidity and control delays.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Why Water Temperature Is Not the Same as Room Comfort</h2>
+          <p>
+            Supply water temperature describes the energy source available to the distribution system. Room comfort
+            describes the result after that energy moves through emitters, surfaces, air and occupants. The two values are
+            related, but they are not interchangeable.
+          </p>
+        </section>
+
+        <figure class="diagram-placeholder logic">
+          <div>Room feedback</div>
+          <div>Mode request</div>
+          <div>Water target</div>
+          <figcaption>Diagram placeholder: room temperature feedback and mode changeover logic</figcaption>
+        </figure>
+
+        <section>
+          <h2>5. Heating and Cooling Changeover Logic</h2>
+          <p>
+            Changeover logic must decide when the system should heat, cool or remain idle. A reliable sequence normally
+            needs deadbands, time delays, room feedback and protection against rapid switching between modes.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. What Information the System Needs</h2>
+          <p>
+            Useful information can include outdoor temperature, supply and return water temperature, room temperature,
+            humidity, flow confirmation, occupancy schedule and the current operating mode. Each signal should have a
+            clear purpose in the control sequence.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Possible Technical Solutions</h2>
+          <p>
+            Possible solutions include adding representative room feedback, improving sensor placement, adjusting
+            weather compensation, defining a clear heating/cooling changeover strategy and reviewing hydraulic separation
+            or buffer tank sensor positions.
+          </p>
+        </section>
+
+        <figure class="diagram-placeholder">
+          <div>Outdoor</div>
+          <div>Controller</div>
+          <div>Room</div>
+          <figcaption>Diagram placeholder: required control signals for comfort-based operation</figcaption>
+        </figure>
+
+        <section>
+          <h2>8. Recommended Engineering Approach</h2>
+          <p>
+            The recommended approach is to document the intended operating sequence before changing hardware. Identify
+            which sensor starts heating, which sensor stops heating, how cooling is enabled and what prevents short
+            cycling or contradictory commands.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Key Takeaways</h2>
+          <ul>
+            <li>Water temperature is necessary information, but it does not prove room comfort.</li>
+            <li>Heating and cooling need a defined changeover sequence.</li>
+            <li>Sensor placement can determine whether control logic behaves correctly.</li>
+            <li>Commissioning should verify the complete system, not only equipment operation.</li>
+          </ul>
+        </section>
+
+        <div class="download-panel">
+          <a class="button" href="../assets/pdf/heat-pump-water-temperature-control-case-study.pdf">Download Full PDF Case Study</a>
+          <p>PDF version will be added after the technical diagrams are completed.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>HVAC Engineering Notes</p>
+      <p>Contact details will be added here.</p>
+    </footer>
+  </body>
+</html>
